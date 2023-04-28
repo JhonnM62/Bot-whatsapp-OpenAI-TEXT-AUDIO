@@ -6,4 +6,4 @@ COPY . .
 ARG RAILWAY_STATIC_URL
 ARG PUBLIC_URL
 ARG PORT
-CMD ["npm", "start", "--", "--env-file=./.env", "apigpt"]
+CMD ["npm", "start"]
