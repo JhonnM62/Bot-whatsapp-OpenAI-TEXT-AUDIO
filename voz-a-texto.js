@@ -3,10 +3,9 @@ const FormData = require("form-data");
 const fs = require("fs");
 
 async function transcribeAudio(filePath) {
-  const unixFilePath = filePath.substring(2).replace(/\\/g, "/");
   let data = new FormData();
   data.append("model", "whisper-1");
-  data.append("file", fs.createReadStream(unixFilePath));
+  data.append("file", fs.createReadStream(filePath));
 
   let config = {
     method: "post",
