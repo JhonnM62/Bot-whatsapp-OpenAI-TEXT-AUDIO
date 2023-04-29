@@ -1,1 +1,0 @@
-# Bot-de-whatspp-con-OpenAi-RECIBE-TEXTO-VOZ
