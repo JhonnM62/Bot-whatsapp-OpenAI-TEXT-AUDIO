@@ -30,6 +30,7 @@ class chatGPTclass extends CoreClass {
       await fs.promises.writeFile(filePath, buffer);
       const fileogg = await convertAudio(filePath);
       const Prueba = await transcribeAudio(fileogg);
+      console.log(">>text: ",Prueba);
       ctx.body = await Prueba.text;
     }
 
