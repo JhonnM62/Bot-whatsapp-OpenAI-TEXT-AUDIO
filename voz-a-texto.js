@@ -13,7 +13,7 @@ async function transcribeAudio(filePath) {
     url: "https://api.openai.com/v1/audio/transcriptions",
     headers: {
       Authorization:
-        "Bearer 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",
+        "Bearer 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",
       ...data.getHeaders(),
     },
     data: data,
